@@ -39,7 +39,7 @@ def main_menu
         @guess_arr[index] = letter
         new_game.attempts + 1
       else
-        new_game.bad_count = new_game.bad_count + 1
+        new_game.bad_count += 1
         new_game.attempts += 1
         new_man.images[new_game.bad_count]
       end
