@@ -5,7 +5,7 @@ class Word
       "sports" => ["football", "soccer", "baseball", "basketball"],
       "cars" => ["honda", "toyota", "kia", "chevy", "ford"]
     }
-    @current_word = ""
+    @current_word = []
   end
 
   # def word_bank
@@ -20,6 +20,6 @@ class Word
     array = @word_bank[genre]
     top = array.length
     random = rand(top-1)
-    @current_word = array[random]
+    @current_word = array[random].split('')
   end
 end
